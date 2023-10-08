@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(#a132e5, #32dce5, #47d82a);
+}
+.enigma {
+    text-align: center;
+    margin-top: 100px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.mensagem {
+    text-align: center;
+    margin-top: 10px;
+}

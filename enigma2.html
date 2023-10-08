@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MND</title>
+    <link rel="stylesheet" type="text/css" href="corpo.css">
+</head>
+<body>
+    <style>
+        #botao-container {
+            display: none; /* Inicialmente, o botão está oculto */
+            text-align: center; /* Centraliza o botão horizontalmente */
+            margin-top: 20px; /* Espaçamento superior para o botão */
+        }
+    </style>
+        <div id="pergunta">
+            <div class="enigma">
+                <h1><p style="color: red;">Enigma.</p></h1>
+                <p style="color: red;">Responda ao enigma.</p>
+                <input type="text" id="resposta">
+                <button onclick="verificarResposta()"><p style="color: rgb(0, 255, 21);">Verificar Resposta.</p></button>
+            </div>
+        </div>
+        <div class="mensagem" id="mensagem"></div>
+        <div class="mensage" id="mensage"></div>
+    
+        <!-- Botão oculto que será exibido quando a resposta estiver correta -->
+        <div id="botao-container">
+            <button><a href="enigma3.html"><p style="color: rgb(0, 255, 21);">Próximo enigma</p></a></button>
+        </div>
+    
+        <script>
+            function verificarResposta() {
+                var resposta = document.getElementById("resposta").value.toLowerCase();
+    
+                if (resposta === "971") {
+                    document.getElementById("mensagem").innerHTML = "Resposta correta!";
+                    document.getElementById("botao-container").style.display = "block"; // Exibe o botão
+                } else {
+                    document.getElementById("mensagem").innerHTML = "Resposta incorreta. Tente novamente.";
+                }
+            }
+        </script>
+    
+    <style>
+        img {
+            display: block;
+            margin: 0 auto; 
+        }
+    </style>
+    <img src="algumlugar 1.png" alt="DDI">
+    <img src="enigma2 1.png" alt="Enigma 2">
+
+</body>
+</html>
